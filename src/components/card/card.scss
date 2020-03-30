@@ -1,0 +1,78 @@
+.card-content{
+    padding: 30px;
+    width: 303px;
+    background: #FFFFFF50;
+    box-shadow: 0 4px 9px 0 rgba(0,0,0,0.02);
+    border-radius: 6px;
+    margin: 30px 30px 30px 0;
+    .card-heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .number{
+        margin-top:20px;
+        p{
+            font-weight: 300;
+            font-size: 14px;
+            color: rgba(50,60,71,0.40);
+            letter-spacing: -0.1px;
+            span{
+                font-weight: 100;
+                font-size: 24px;
+                color: #4DA1FF;
+                line-height: 28px;
+                margin-right: 6px;
+            }
+        }
+    }
+    .dots{
+        position: relative;
+        cursor: pointer;
+        .mark-popup{
+            position: absolute;
+            top: 30px;
+            left: -50px;
+            display: none;
+            p{
+                font-weight: 100;
+                font-size: 13px;
+                color: #323C47;
+                padding: 12px 15px;
+                background: #FFFFFF;
+                box-shadow: 0 1px 8px 0 rgba(0,0,0,0.08);
+                border-radius: 5px;
+                position: relative;
+                white-space: nowrap;
+                &::after{
+                    content: '';
+                        position: absolute;
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 9px 14px 9px;
+                        border-color: transparent transparent #ffffff transparent;
+                        box-sizing: border-box;
+                        top: -14px;
+                        left: calc(50% - 9px);
+                }
+            }
+        }
+        &:hover{
+            .mark-popup{
+                display: block;
+            }
+        }
+    }
+    &.active{
+        background: #FFFFFF;
+        .number{
+            p{
+                span{
+                    color: #FF6D4A;
+                }
+            }
+        }
+    }
+}

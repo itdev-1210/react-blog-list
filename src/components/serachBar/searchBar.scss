@@ -1,0 +1,22 @@
+.serach-field{
+    img{
+        width: auto;
+    }
+    input{
+        border: none;
+        background: none;
+        color: #989898;
+        font-size: 16px;
+        margin-left: 15px;
+        &::placeholder{
+            color: #98989850;
+            font-weight: 100;
+            position: relative;
+            width: fit-content;
+            // background-image: url("../../assets/images/search_icon.png");
+            // background-repeat: no-repeat;
+            // padding-left: 30px;
+            // background-size: 22px 22px;
+        }
+    }
+}
